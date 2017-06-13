@@ -1,0 +1,1658 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/onto/politics#"
+     xml:base="http://purl.org/onto/politics"
+     xmlns:dbo="http://dbpedia.org/ontology/"
+     xmlns:dbp="http://dbpedia.org/resource/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:wiki="http://www.wikidata.org/entity/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dbpt="http://pt.dbpedia.org/resource/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://purl.org/onto/politics#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+        <rdfs:label xml:lang="en">description</rdfs:label>
+        <rdfs:label xml:lang="pt">descrição</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#candidateElectionName -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/onto/politics#candidateElectionName">
+        <rdfs:label xml:lang="en">candidate election name</rdfs:label>
+        <rdfs:label xml:lang="pt">nome de urna do candidato</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q19772737"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#candidateName -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/onto/politics#candidateName">
+        <rdfs:label xml:lang="en">candidate name</rdfs:label>
+        <rdfs:label xml:lang="pt">nome do candidato</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q19772737"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#electionDescription -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/onto/politics#electionDescription">
+        <rdfs:label xml:lang="pt">Descrição da eleição</rdfs:label>
+        <rdfs:label xml:lang="en">election description</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q40231"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#nameCoalition -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/onto/politics#nameCoalition">
+        <rdfs:label xml:lang="en">coalition name</rdfs:label>
+        <rdfs:label xml:lang="pt">nome da legenda</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q124964"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#occupation_description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/onto/politics#occupation_description">
+        <rdfs:label xml:lang="pt">descrição da ocupação</rdfs:label>
+        <rdfs:label xml:lang="en">occupation description</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+        <rdfs:domain rdf:resource="http://purl.org/onto/politics#Occupation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#partyName -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/onto/politics#partyName">
+        <rdfs:label xml:lang="pt">nome do partido</rdfs:label>
+        <rdfs:label xml:lang="en">party name</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q7278"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#positionDescription -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/onto/politics#positionDescription">
+        <rdfs:comment xml:lang="pt">Descrição do cargo a que o candidato concorre</rdfs:comment>
+        <rdfs:label xml:lang="pt">descrição do cargo</rdfs:label>
+        <rdfs:label xml:lang="en">position description</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q4164871"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#integer -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/onto/politics#isAttributeOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto/politics#isAttributeOf"/>
+    
+
+
+    <!-- http://purl.org/onto/politics#municipality -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto/politics#municipality">
+        <rdfs:subPropertyOf rdf:resource="http://www.wikidata.org/entity/P361"/>
+        <rdfs:range rdf:resource="http://www.wikidata.org/entity/Q15284"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#state -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto/politics#state">
+        <rdfs:subPropertyOf rdf:resource="http://www.wikidata.org/entity/P361"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+        <rdfs:label xml:lang="pt">estado</rdfs:label>
+        <rdfs:label xml:lang="en">state</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/entity/P17 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/entity/P17">
+        <rdfs:subPropertyOf rdf:resource="http://www.wikidata.org/entity/P361"/>
+        <rdfs:range rdf:resource="http://www.wikidata.org/entity/Q6256"/>
+        <rdfs:label xml:lang="en">country</rdfs:label>
+        <rdfs:label xml:lang="pt">país</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/entity/P361 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/entity/P361">
+        <owl:inverseOf rdf:resource="http://www.wikidata.org/entity/P527"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+        <rdfs:label xml:lang="pt">parte de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/entity/P527 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/entity/P527">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+        <rdfs:label xml:lang="pt">tem parte</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/onto/politics#abbreviation -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#abbreviation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="en">abbreviation</rdfs:label>
+        <rdfs:label xml:lang="pt">sigla</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#birthdate -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#birthdate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q5"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">birthdate</rdfs:label>
+        <rdfs:label xml:lang="pt">data de nascimento</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#candidateNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#candidateNumber">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#number"/>
+        <rdfs:label xml:lang="en">candidate number</rdfs:label>
+        <rdfs:label xml:lang="pt">número do candidato</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#citizenshipDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#citizenshipDescription">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q5"/>
+        <rdfs:comment xml:lang="pt">Descrição da nacionalidade do candidato</rdfs:comment>
+        <rdfs:label xml:lang="en">citizenship description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#cnpj -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#cnpj">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q4830453"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#code -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#code">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="en">code</rdfs:label>
+        <rdfs:label xml:lang="pt">código</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#cpf -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#cpf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q5"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">cpf</rdfs:label>
+        <rdfs:label xml:lang="pt">cpf</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#electionRound -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#electionRound">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">election round</rdfs:label>
+        <rdfs:label xml:lang="pt">turno</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#electionYear -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#electionYear">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#year"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q40231"/>
+        <rdfs:label xml:lang="pt">ano da eleição</rdfs:label>
+        <rdfs:label xml:lang="en">election year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#electorCardNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#electorCardNumber">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#number"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q5"/>
+        <rdfs:label xml:lang="en">elector card number</rdfs:label>
+        <rdfs:label xml:lang="pt">número do título eleitoral</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#electoralAreaNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#electoralAreaNumber">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#number"/>
+        <rdfs:domain rdf:resource="http://purl.org/onto/politics#ElectoralArea"/>
+        <rdfs:label xml:lang="en">electoral area number</rdfs:label>
+        <rdfs:label xml:lang="pt">número da zona eleitoral</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#internalCandidateNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#internalCandidateNumber">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#number"/>
+        <rdfs:comment xml:lang="pt">Número sequencial do candidato gerado internamente pelos sistemas eleitorais. Não é o número de campanha do candidato.</rdfs:comment>
+        <rdfs:label xml:lang="en">internal candidate number</rdfs:label>
+        <rdfs:label xml:lang="pt">número interno do candidato</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#number -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#number">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#occupationCode -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#occupationCode">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#code"/>
+        <rdfs:domain rdf:resource="http://purl.org/onto/politics#Occupation"/>
+        <rdfs:label xml:lang="en">occupation code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#partyAbbreviation -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#partyAbbreviation">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#abbreviation"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q7278"/>
+        <rdfs:label xml:lang="en">party abbreviation</rdfs:label>
+        <rdfs:label xml:lang="pt">sigla do partido</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#partyNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#partyNumber">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#number"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q7278"/>
+        <rdfs:label xml:lang="pt">número do partido</rdfs:label>
+        <rdfs:label xml:lang="en">party number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#period -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#period">
+        <rdfs:comment xml:lang="pt">Período a que se referem os dados. É o ano da eleição nos arquivos
+referentes ao eleitorado da eleição ou então o ano e mês no caso ao
+arquivo ATUAL.</rdfs:comment>
+        <rdfs:label xml:lang="en">period</rdfs:label>
+        <rdfs:label xml:lang="pt">período</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#positionCode -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#positionCode">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#code"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q4164871"/>
+        <rdfs:label xml:lang="pt">código da posição</rdfs:label>
+        <rdfs:label xml:lang="en">position code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#stateCode -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#stateCode">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#code"/>
+        <rdfs:label xml:lang="pt">sigla do estado</rdfs:label>
+        <rdfs:label xml:lang="en">state code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#stationNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#stationNumber">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#number"/>
+        <rdfs:domain rdf:resource="http://purl.org/onto/politics#PollingStation"/>
+        <rdfs:label xml:lang="en">número da urna</rdfs:label>
+        <rdfs:label xml:lang="en">station number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#total -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#total">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#totalAbstentions -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#totalAbstentions">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#total"/>
+        <rdfs:domain rdf:resource="http://purl.org/onto/politics#ElectoralArea"/>
+        <rdfs:label xml:lang="en">total abstentions</rdfs:label>
+        <rdfs:label xml:lang="pt">total de abstenções</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#totalAgregatedStations -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#totalAgregatedStations">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#total"/>
+        <rdfs:domain rdf:resource="http://purl.org/onto/politics#ElectoralArea"/>
+        <rdfs:label xml:lang="en">total agregated stations</rdfs:label>
+        <rdfs:label xml:lang="pt">total de seções agregadas</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#totalAttendance -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#totalAttendance">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#total"/>
+        <rdfs:domain rdf:resource="http://purl.org/onto/politics#ElectoralArea"/>
+        <rdfs:label xml:lang="en">total attendance</rdfs:label>
+        <rdfs:label xml:lang="pt">total de comparecimento</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#totalBlankVotes -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#totalBlankVotes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#total"/>
+        <rdfs:domain rdf:resource="http://purl.org/onto/politics#ElectoralArea"/>
+        <rdfs:label xml:lang="en">total blank votes</rdfs:label>
+        <rdfs:label xml:lang="pt">total de votos brancos</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#totalNominalVotes -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#totalNominalVotes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#total"/>
+        <rdfs:domain rdf:resource="http://purl.org/onto/politics#ElectoralArea"/>
+        <rdfs:label xml:lang="pt">total de votos nominais</rdfs:label>
+        <rdfs:label xml:lang="en">total nominal votes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#totalNullVotes -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#totalNullVotes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#total"/>
+        <rdfs:domain rdf:resource="http://purl.org/onto/politics#ElectoralArea"/>
+        <rdfs:label xml:lang="pt">total de votos nulos</rdfs:label>
+        <rdfs:label xml:lang="en">total null votes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#totalPartyVotes -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#totalPartyVotes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#total"/>
+        <rdfs:label xml:lang="pt">total de votos de legenda</rdfs:label>
+        <rdfs:label xml:lang="en">total party votes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#totalStations -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#totalStations">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#total"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q15284"/>
+        <rdfs:label xml:lang="pt">total de seções eleitorais</rdfs:label>
+        <rdfs:label xml:lang="en">total polling stations</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#totalVacancies -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#totalVacancies">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#total"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q4164871"/>
+        <rdfs:comment xml:lang="pt">Quantidade de vagas para aquele cargo naquela unidade eleitoral</rdfs:comment>
+        <rdfs:label xml:lang="pt">quantidade de vagas</rdfs:label>
+        <rdfs:label xml:lang="en">total vacancies</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#totalVotes -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#totalVotes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#total"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+        <rdfs:label xml:lang="pt">total de votos</rdfs:label>
+        <rdfs:label xml:lang="en">total votes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#treCitzenshipCode -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#treCitzenshipCode">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#code"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q6256"/>
+        <rdfs:comment xml:lang="pt">Código da nacionalidade do candidato</rdfs:comment>
+        <rdfs:label xml:lang="en">citzenship code</rdfs:label>
+        <rdfs:label xml:lang="pt">código de nacionalidade</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#tseMunicipalityCode -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#tseMunicipalityCode">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#code"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q15284"/>
+        <rdfs:label xml:lang="en">TSE municipality code</rdfs:label>
+        <rdfs:label xml:lang="pt">código de município do TSE</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto/politics#year -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#year">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:label xml:lang="pt">ano</rdfs:label>
+        <rdfs:label xml:lang="en">year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/ageRange -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/ageRange">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Category"/>
+        <rdfs:label xml:lang="en">Age Range</rdfs:label>
+        <rdfs:label xml:lang="pt">Faixa Etaria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/resource/Category -->
+
+    <owl:Class rdf:about="http://dbpedia.org/resource/Category"/>
+    
+
+
+    <!-- http://purl.org/onto/politics#CD_TIPO_BEM_CANDIDATO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#CD_TIPO_BEM_CANDIDATO">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#CandidateProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#CODIGO_LEGENDA -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#CODIGO_LEGENDA">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#Legenda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#CODIGO_MUNICIPIO_NASCIMENTO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#CODIGO_MUNICIPIO_NASCIMENTO">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q19772737"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#CODIGO_NACIONALIDADE -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#CODIGO_NACIONALIDADE">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q19772737"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#CODIGO_SIT_CANDIDATO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#CODIGO_SIT_CANDIDATO">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#CODIGO_SIT_CAND_TOT -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#CODIGO_SIT_CAND_TOT">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#COD_SITUACAO_CANDIDATURA -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#COD_SITUACAO_CANDIDATURA">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#COD_SIT_CAND_SUPERIOR -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#COD_SIT_CAND_SUPERIOR">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#COD_SIT_TOT_TURNO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#COD_SIT_TOT_TURNO">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q13516686"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#COMPOSICAO_LEGENDA -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#COMPOSICAO_LEGENDA">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#Legenda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#CandidateProperty -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#CandidateProperty">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q6422240"/>
+        <rdfs:label xml:lang="pt">Bem do Candidato</rdfs:label>
+        <rdfs:label xml:lang="en">Candidate Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#DATA_GERACAO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#DATA_GERACAO">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#Geração"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#DATA_ULTIMA_ATUALIZACAO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#DATA_ULTIMA_ATUALIZACAO">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#CandidateProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#DESCRICAO_NACIONALIDADE -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#DESCRICAO_NACIONALIDADE">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q19772737"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#DESC_SIT_CANDIDATO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#DESC_SIT_CANDIDATO">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#DESC_SIT_CAND_SUPERIOR -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#DESC_SIT_CAND_SUPERIOR">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#DESC_SIT_CAND_TOT -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#DESC_SIT_CAND_TOT">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#DESC_SIT_TOT_TURNO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#DESC_SIT_TOT_TURNO">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q13516686"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#DESPESA_MAX_CAMPANHA -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#DESPESA_MAX_CAMPANHA">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q13516686"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#DES_SITUACAO_CANDIDATURA -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#DES_SITUACAO_CANDIDATURA">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#DS_TIPO_BEM_CANDIDATO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#DS_TIPO_BEM_CANDIDATO">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#CandidateProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#EducationalStage -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#EducationalStage">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Category"/>
+        <rdfs:comment xml:lang="pt">Grau de Escolaridade – Atenção ao trabalhar com esta informação, pois esta é a escolaridade declarada pelo eleitor.
+Em muitos casos, o eleitor se cadastra com um determinado grau de
+escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta ao cartório eleitoral para atualizar esta informação.</rdfs:comment>
+        <rdfs:label xml:lang="en">Educational Stage</rdfs:label>
+        <rdfs:label xml:lang="pt">Grau de Instrução</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#ElectoralArea -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#ElectoralArea">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q56061"/>
+        <rdfs:label xml:lang="en">Electoral Area</rdfs:label>
+        <rdfs:label xml:lang="pt">Zona Eleitoral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#GERACAO_ARQUIVO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#GERACAO_ARQUIVO">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#Geração"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#Geração -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#Geração"/>
+    
+
+
+    <!-- http://purl.org/onto/politics#HORA_GERACAO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#HORA_GERACAO">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#Geração"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#HORA_ULTIMA_ATUALIZACAO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#HORA_ULTIMA_ATUALIZACAO">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#CandidateProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#HORA_ULT_TOTALIZACAO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#HORA_ULT_TOTALIZACAO">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#ElectoralArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#IDADE_DATA_ELEICAO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#IDADE_DATA_ELEICAO">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#Legenda -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#Legenda"/>
+    
+
+
+    <!-- http://purl.org/onto/politics#NOME_LEGENDA -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#NOME_LEGENDA">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#Legenda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#NOME_URNA_CANDIDATO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#NOME_URNA_CANDIDATO">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#NUMERO_CANDIDATO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#NUMERO_CANDIDATO">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#NUMERO_PARTIDO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#NUMERO_PARTIDO">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q7278"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#NUM_TITULO_ELEITORAL_CANDIDATO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#NUM_TITULO_ELEITORAL_CANDIDATO">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#NUM_VOTAVEL -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#NUM_VOTAVEL">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#Occupation -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#Occupation">
+        <rdfs:label xml:lang="en">Occupation</rdfs:label>
+        <rdfs:label xml:lang="pt">Ocupação</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#PollingStation -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#PollingStation">
+        <rdfs:label xml:lang="en">Polling Station</rdfs:label>
+        <rdfs:label xml:lang="pt">Seção Eleitoral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#QTDE_VOTOS -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#QTDE_VOTOS">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#QTDE_VOTOS_LEGENDA -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#QTDE_VOTOS_LEGENDA">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q7278"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#QTDE_VOTOS_NOMINAIS -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#QTDE_VOTOS_NOMINAIS">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q7278"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#QTD_APTOS -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#QTD_APTOS">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#PollingStation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#QTD_APTOS_TOT -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#QTD_APTOS_TOT">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#ElectoralArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#QTD_SECOES_AGREGADAS -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#QTD_SECOES_AGREGADAS">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#ElectoralArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#QTD_SECOES_TOT -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#QTD_SECOES_TOT">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#ElectoralArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#QTD_VOTOS_ANULADOS_APU -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#QTD_VOTOS_ANULADOS_APU">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#ElectoralArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#QT_VOTOS_ANULADOS_APU_SEP -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#QT_VOTOS_ANULADOS_APU_SEP">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#PollingStation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#QT_VOTOS_BRANCOS -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#QT_VOTOS_BRANCOS">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#PollingStation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#QT_VOTOS_LEGENDA -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#QT_VOTOS_LEGENDA">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#PollingStation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#QT_VOTOS_NULOS -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#QT_VOTOS_NULOS">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#PollingStation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#SEP_DATA_ULT_TOTALIZACAO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#SEP_DATA_ULT_TOTALIZACAO">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#ElectoralArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#SEQUENCIAL_COLIGACAO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#SEQUENCIAL_COLIGACAO">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q124964"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#SIGLA_LEGENDA -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#SIGLA_LEGENDA">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#Legenda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#SIGLA_UF_NASCIMENTO -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#SIGLA_UF_NASCIMENTO">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q19772737"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#TIPO_LEGENDA -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#TIPO_LEGENDA">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#Legenda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#TITULO_DE_ELEITOR -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#TITULO_DE_ELEITOR">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#TOTAL_VOTOS -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#TOTAL_VOTOS">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q82955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#VALOR_BEM -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#VALOR_BEM">
+        <rdfs:subClassOf rdf:resource="http://purl.org/onto/politics#CandidateProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q124964 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q124964">
+        <rdfs:label xml:lang="en">Coalition</rdfs:label>
+        <rdfs:label xml:lang="pt">Coligação</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q13516686 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q13516686">
+        <rdfs:label xml:lang="pt">Despesa</rdfs:label>
+        <rdfs:label xml:lang="en">Expense</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q15284 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q15284">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q56061"/>
+        <rdfs:label xml:lang="en">Municipality</rdfs:label>
+        <rdfs:label xml:lang="pt">Município</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q19772737 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q19772737">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q5"/>
+        <rdfs:label xml:lang="pt">Candidato Eleitoral</rdfs:label>
+        <rdfs:label xml:lang="en">Electoral Candidate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q24229398 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q24229398">
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+        <rdfs:label xml:lang="pt">Agente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q40231 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q40231">
+        <rdfs:label xml:lang="en">Election</rdfs:label>
+        <rdfs:label xml:lang="pt">Eleição</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4164871 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q4164871">
+        <rdfs:label xml:lang="pt">Cargo</rdfs:label>
+        <rdfs:label xml:lang="en">Position</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4369513 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q4369513">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Category"/>
+        <rdfs:label xml:lang="en">Gender</rdfs:label>
+        <rdfs:label xml:lang="pt">Genero</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4830453 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q4830453">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q24229398"/>
+        <rdfs:label xml:lang="en">Business Enterprise</rdfs:label>
+        <rdfs:label xml:lang="pt">Empresa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q485258 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q485258">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q56061"/>
+        <rdfs:label xml:lang="pt">Estados do Brasil</rdfs:label>
+        <rdfs:label xml:lang="en">States of Brazil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q5 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q5">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q24229398"/>
+        <rdfs:label xml:lang="en">Human</rdfs:label>
+        <rdfs:label xml:lang="pt">Humano</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q56061 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q56061">
+        <rdfs:label xml:lang="en">Administrative Territorial Entity</rdfs:label>
+        <rdfs:label xml:lang="pt">Entidade Teritorial Administrativa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q6256 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q6256">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q56061"/>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+        <rdfs:label xml:lang="pt">País</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q6422240 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q6422240">
+        <rdfs:label xml:lang="en">Property</rdfs:label>
+        <rdfs:label xml:lang="pt">Propriedade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q7278 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q7278">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q24229398"/>
+        <rdfs:label xml:lang="pt">Partido político</rdfs:label>
+        <rdfs:label xml:lang="en">Political Party</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q82955 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q82955">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q5"/>
+        <rdfs:label xml:lang="en">Politician</rdfs:label>
+        <rdfs:label xml:lang="pt">Político</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/resource/Acre -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Acre">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Alagoas -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Alagoas">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Amapá -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Amapá">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Amazonas -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Amazonas">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Bahia -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Bahia">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Ceará -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ceará">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Espírito_Santo -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Espírito_Santo">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Female -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Female">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q4369513"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Goiás -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Goiás">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Male -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Male">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q4369513"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Maranhão -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Maranhão">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Mato_Grosso -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Mato_Grosso">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Mato_Grosso_do_Sul -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Mato_Grosso_do_Sul">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Minas_Gerais -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Minas_Gerais">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Paraná -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Paraná">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Paraíba -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Paraíba">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Pará -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Pará">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Pernambuco -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Pernambuco">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Piauí -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Piauí">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Rio_Grande_do_Norte -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Rio_Grande_do_Norte">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Rio_Grande_do_Sul -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Rio_Grande_do_Sul">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Rio_de_Janeiro -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Rio_de_Janeiro">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Rondônia -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Rondônia">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Roraima -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Roraima">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Santa_Catarina -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Santa_Catarina">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Sergipe -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Sergipe">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/São_Paulo -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/São_Paulo">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Tocantins -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Tocantins">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#Ensino_Medio_Incompleto -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#Ensino_Medio_Incompleto">
+        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
+        <rdfs:label xml:lang="pt">Ensino Médio Incompleto</rdfs:label>
+        <rdfs:label xml:lang="en">Incomplete Secondary Education</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#FullPrimaryEducation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#FullPrimaryEducation">
+        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
+        <rdfs:label xml:lang="pt">Ensino Fundamental</rdfs:label>
+        <rdfs:label xml:lang="en">Primary Education</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#Illiterate -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#Illiterate">
+        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
+        <rdfs:label xml:lang="pt">Anafalbeto</rdfs:label>
+        <rdfs:label xml:lang="en">Illiterate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#IncompletePrimaryEducation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#IncompletePrimaryEducation">
+        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
+        <rdfs:label xml:lang="pt">Educação Primária Incompleta</rdfs:label>
+        <rdfs:label xml:lang="en">Incomplete Primary Education</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#IncompleteTertiaryEducation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#IncompleteTertiaryEducation">
+        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
+        <rdfs:label xml:lang="pt">Educação Superior Incompleta</rdfs:label>
+        <rdfs:label xml:lang="en">Incomplete Tertiary Education</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#ReadWrite -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#ReadWrite">
+        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
+        <rdfs:label xml:lang="pt">Lê e Escreve</rdfs:label>
+        <rdfs:label xml:lang="en">Read and Write</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#SecondaryEducation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#SecondaryEducation">
+        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
+        <rdfs:label xml:lang="pt">Ensino Médio</rdfs:label>
+        <rdfs:label xml:lang="en">Secondary Education</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#Superior_a_79_anos -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#Superior_a_79_anos">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#TertiaryEducation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#TertiaryEducation">
+        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
+        <rdfs:label xml:lang="pt">Educação Superior</rdfs:label>
+        <rdfs:label xml:lang="en">Tertiary Eucation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#_a_20_anos -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_a_20_anos">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#_a_24_anos -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_a_24_anos">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#_a_34_anos -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_a_34_anos">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#_a_44_anos -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_a_44_anos">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#_a_59_anos -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_a_59_anos">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#_a_69_anos -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_a_69_anos">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#_a_79_anos -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_a_79_anos">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#_anos -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_anos">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
