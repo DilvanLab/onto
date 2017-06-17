@@ -606,6 +606,15 @@ arquivo ATUAL.</rdfs:comment>
     
 
 
+    <!-- http://purl.org/onto/politics#Candidacy -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#Candidacy">
+        <rdfs:comment xml:lang="en">Candidacy</rdfs:comment>
+        <rdfs:comment xml:lang="pt">Candidatura</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/onto/politics#EducationalStage -->
 
     <owl:Class rdf:about="http://purl.org/onto/politics#EducationalStage">
@@ -615,6 +624,15 @@ Em muitos casos, o eleitor se cadastra com um determinado grau de
 escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta ao cartório eleitoral para atualizar esta informação.</rdfs:comment>
         <rdfs:label xml:lang="en">Educational Stage</rdfs:label>
         <rdfs:label xml:lang="pt">Grau de Instrução</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#ElectionTurn -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#ElectionTurn">
+        <rdfs:comment xml:lang="en">Election Turn</rdfs:comment>
+        <rdfs:comment xml:lang="pt">Turno da Eleição</rdfs:comment>
     </owl:Class>
     
 
@@ -643,6 +661,15 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
     <owl:Class rdf:about="http://purl.org/onto/politics#PollingStation">
         <rdfs:label xml:lang="en">Polling Station</rdfs:label>
         <rdfs:label xml:lang="pt">Seção Eleitoral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#Vacancy -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#Vacancy">
+        <rdfs:label xml:lang="en">Vacancy</rdfs:label>
+        <rdfs:label xml:lang="pt">Vaga</rdfs:label>
     </owl:Class>
     
 
