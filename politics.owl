@@ -401,6 +401,7 @@ arquivo ATUAL.</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#stateCode">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#code"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q485258"/>
         <rdfs:label xml:lang="pt">sigla do estado</rdfs:label>
         <rdfs:label xml:lang="en">state code</rdfs:label>
     </owl:DatatypeProperty>
@@ -593,16 +594,30 @@ arquivo ATUAL.</rdfs:comment>
     <!-- http://dbpedia.org/ontology/ageRange -->
 
     <owl:Class rdf:about="http://dbpedia.org/ontology/ageRange">
-        <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Category"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q2285707"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#MoreThan79YearsOld"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#16YearsOld"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#17YearsOld"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#18To20YearsOld"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#21To24YearsOld"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#25To34YearsOld"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#35To44YearsOld"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#45To59YearsOld"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#60To69YearsOld"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#70To79YearsOld"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:label xml:lang="en">Age Range</rdfs:label>
         <rdfs:label xml:lang="pt">Faixa Etaria</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://dbpedia.org/resource/Category -->
-
-    <owl:Class rdf:about="http://dbpedia.org/resource/Category"/>
     
 
 
@@ -615,15 +630,12 @@ arquivo ATUAL.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/onto/politics#EducationalStage -->
+    <!-- http://purl.org/onto/politics#CivilStatus -->
 
-    <owl:Class rdf:about="http://purl.org/onto/politics#EducationalStage">
-        <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Category"/>
-        <rdfs:comment xml:lang="pt">Grau de Escolaridade – Atenção ao trabalhar com esta informação, pois esta é a escolaridade declarada pelo eleitor.
-Em muitos casos, o eleitor se cadastra com um determinado grau de
-escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta ao cartório eleitoral para atualizar esta informação.</rdfs:comment>
-        <rdfs:label xml:lang="en">Educational Stage</rdfs:label>
-        <rdfs:label xml:lang="pt">Grau de Instrução</rdfs:label>
+    <owl:Class rdf:about="http://purl.org/onto/politics#CivilStatus">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q2285707"/>
+        <rdfs:label xml:lang="en">Civil Status</rdfs:label>
+        <rdfs:label xml:lang="pt">Estado Civil</rdfs:label>
     </owl:Class>
     
 
@@ -641,6 +653,9 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
 
     <owl:Class rdf:about="http://purl.org/onto/politics#ElectoralArea">
         <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q56061"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/onto/politics#electoralAreaNumber"/>
+        </owl:hasKey>
         <rdfs:label xml:lang="en">Electoral Area</rdfs:label>
         <rdfs:label xml:lang="pt">Zona Eleitoral</rdfs:label>
     </owl:Class>
@@ -661,6 +676,37 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
     <owl:Class rdf:about="http://purl.org/onto/politics#PollingStation">
         <rdfs:label xml:lang="en">Polling Station</rdfs:label>
         <rdfs:label xml:lang="pt">Seção Eleitoral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto/politics#Schooling -->
+
+    <owl:Class rdf:about="http://purl.org/onto/politics#Schooling">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q2285707"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#Ensino_Medio_Incompleto"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#FullPrimaryEducation"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#Illiterate"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#IncompletePrimaryEducation"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#IncompleteTertiaryEducation"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#ReadWrite"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#SecondaryEducation"/>
+                            <rdf:Description rdf:about="http://purl.org/onto/politics#TertiaryEducation"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="pt">Grau de Escolaridade – Atenção ao trabalhar com esta informação, pois esta é a escolaridade declarada pelo eleitor.
+Em muitos casos, o eleitor se cadastra com um determinado grau de
+escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta ao cartório eleitoral para atualizar esta informação.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Grau de Instrução</rdfs:label>
+        <rdfs:label xml:lang="en">Schooling</rdfs:label>
     </owl:Class>
     
 
@@ -696,6 +742,9 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
 
     <owl:Class rdf:about="http://www.wikidata.org/entity/Q15284">
         <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q56061"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/onto/politics#tseMunicipalityCode"/>
+        </owl:hasKey>
         <rdfs:label xml:lang="en">Municipality</rdfs:label>
         <rdfs:label xml:lang="pt">Município</rdfs:label>
     </owl:Class>
@@ -712,11 +761,30 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
     
 
 
+    <!-- http://www.wikidata.org/entity/Q2285707 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q2285707">
+        <rdfs:label xml:lang="en">Categorical Variable</rdfs:label>
+        <rdfs:label xml:lang="pt">Vari&apos;avel Categórica</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.wikidata.org/entity/Q24229398 -->
 
     <owl:Class rdf:about="http://www.wikidata.org/entity/Q24229398">
         <rdfs:label xml:lang="en">Agent</rdfs:label>
         <rdfs:label xml:lang="pt">Agente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3254959 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q3254959">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q2285707"/>
+        <rdfs:label xml:lang="en">Race</rdfs:label>
+        <rdfs:label xml:lang="pt">Raça</rdfs:label>
     </owl:Class>
     
 
@@ -742,7 +810,19 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
     <!-- http://www.wikidata.org/entity/Q4369513 -->
 
     <owl:Class rdf:about="http://www.wikidata.org/entity/Q4369513">
-        <rdfs:subClassOf rdf:resource="http://dbpedia.org/resource/Category"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q2285707"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.wikidata.org/entity/Q6581072"/>
+                            <rdf:Description rdf:about="http://www.wikidata.org/entity/Q6581097"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:label xml:lang="en">Gender</rdfs:label>
         <rdfs:label xml:lang="pt">Genero</rdfs:label>
     </owl:Class>
@@ -763,6 +843,9 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
 
     <owl:Class rdf:about="http://www.wikidata.org/entity/Q485258">
         <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q56061"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/onto/politics#stateCode"/>
+        </owl:hasKey>
         <rdfs:label xml:lang="pt">Estados do Brasil</rdfs:label>
         <rdfs:label xml:lang="en">States of Brazil</rdfs:label>
     </owl:Class>
@@ -773,6 +856,9 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
 
     <owl:Class rdf:about="http://www.wikidata.org/entity/Q5">
         <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q24229398"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/onto/politics#electorCardNumber"/>
+        </owl:hasKey>
         <rdfs:label xml:lang="en">Human</rdfs:label>
         <rdfs:label xml:lang="pt">Humano</rdfs:label>
     </owl:Class>
@@ -894,26 +980,10 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
     
 
 
-    <!-- http://dbpedia.org/resource/Female -->
-
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Female">
-        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q4369513"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://dbpedia.org/resource/Goiás -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Goiás">
         <rdf:type rdf:resource="http://www.wikidata.org/entity/Q485258"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://dbpedia.org/resource/Male -->
-
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Male">
-        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q4369513"/>
     </owl:NamedIndividual>
     
 
@@ -1065,7 +1135,6 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
     <!-- http://purl.org/onto/politics#Ensino_Medio_Incompleto -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#Ensino_Medio_Incompleto">
-        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
         <rdfs:label xml:lang="pt">Ensino Médio Incompleto</rdfs:label>
         <rdfs:label xml:lang="en">Incomplete Secondary Education</rdfs:label>
     </owl:NamedIndividual>
@@ -1075,7 +1144,6 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
     <!-- http://purl.org/onto/politics#FullPrimaryEducation -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#FullPrimaryEducation">
-        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
         <rdfs:label xml:lang="pt">Ensino Fundamental</rdfs:label>
         <rdfs:label xml:lang="en">Primary Education</rdfs:label>
     </owl:NamedIndividual>
@@ -1085,7 +1153,6 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
     <!-- http://purl.org/onto/politics#Illiterate -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#Illiterate">
-        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
         <rdfs:label xml:lang="pt">Anafalbeto</rdfs:label>
         <rdfs:label xml:lang="en">Illiterate</rdfs:label>
     </owl:NamedIndividual>
@@ -1095,7 +1162,6 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
     <!-- http://purl.org/onto/politics#IncompletePrimaryEducation -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#IncompletePrimaryEducation">
-        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
         <rdfs:label xml:lang="pt">Educação Primária Incompleta</rdfs:label>
         <rdfs:label xml:lang="en">Incomplete Primary Education</rdfs:label>
     </owl:NamedIndividual>
@@ -1105,9 +1171,17 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
     <!-- http://purl.org/onto/politics#IncompleteTertiaryEducation -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#IncompleteTertiaryEducation">
-        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
         <rdfs:label xml:lang="pt">Educação Superior Incompleta</rdfs:label>
         <rdfs:label xml:lang="en">Incomplete Tertiary Education</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#MoreThan79YearsOld -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#MoreThan79YearsOld">
+        <rdfs:label xml:lang="pt">Mais que 79 anos</rdfs:label>
+        <rdfs:label xml:lang="en">More than 79 years old</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1115,7 +1189,6 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
     <!-- http://purl.org/onto/politics#ReadWrite -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#ReadWrite">
-        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
         <rdfs:label xml:lang="pt">Lê e Escreve</rdfs:label>
         <rdfs:label xml:lang="en">Read and Write</rdfs:label>
     </owl:NamedIndividual>
@@ -1125,17 +1198,8 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
     <!-- http://purl.org/onto/politics#SecondaryEducation -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#SecondaryEducation">
-        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
         <rdfs:label xml:lang="pt">Ensino Médio</rdfs:label>
         <rdfs:label xml:lang="en">Secondary Education</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/onto/politics#Superior_a_79_anos -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#Superior_a_79_anos">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
     </owl:NamedIndividual>
     
 
@@ -1143,73 +1207,107 @@ escolaridade, por exemplo: com ensino médio aos 16 anos de idade, e não volta 
     <!-- http://purl.org/onto/politics#TertiaryEducation -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#TertiaryEducation">
-        <rdf:type rdf:resource="http://purl.org/onto/politics#EducationalStage"/>
         <rdfs:label xml:lang="pt">Educação Superior</rdfs:label>
         <rdfs:label xml:lang="en">Tertiary Eucation</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/onto/politics#_a_20_anos -->
+    <!-- http://purl.org/onto/politics#16YearsOld -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_a_20_anos">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#16YearsOld">
+        <rdfs:label xml:lang="pt">16 anos</rdfs:label>
+        <rdfs:label xml:lang="en">16 years old</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/onto/politics#_a_24_anos -->
+    <!-- http://purl.org/onto/politics#17YearsOld -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_a_24_anos">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#17YearsOld">
+        <rdfs:label xml:lang="pt">17 anos</rdfs:label>
+        <rdfs:label xml:lang="en">17 years old</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/onto/politics#_a_34_anos -->
+    <!-- http://purl.org/onto/politics#18To20YearsOld -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_a_34_anos">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#18To20YearsOld">
+        <rdfs:label xml:lang="pt">18 a 20 anos</rdfs:label>
+        <rdfs:label xml:lang="en">18 to 20 years old</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/onto/politics#_a_44_anos -->
+    <!-- http://purl.org/onto/politics#21To24YearsOld -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_a_44_anos">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#21To24YearsOld">
+        <rdfs:label xml:lang="pt">21 a 24 anos</rdfs:label>
+        <rdfs:label xml:lang="en">21 to 24 years old</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/onto/politics#_a_59_anos -->
+    <!-- http://purl.org/onto/politics#25To34YearsOld -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_a_59_anos">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#25To34YearsOld">
+        <rdfs:label xml:lang="pt">25 a 34 anos</rdfs:label>
+        <rdfs:label xml:lang="en">25 to 34 years old</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/onto/politics#_a_69_anos -->
+    <!-- http://purl.org/onto/politics#35To44YearsOld -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_a_69_anos">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#35To44YearsOld">
+        <rdfs:label xml:lang="pt">35 a 44 anos</rdfs:label>
+        <rdfs:label xml:lang="en">35 to 44 years old</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/onto/politics#_a_79_anos -->
+    <!-- http://purl.org/onto/politics#45To59YearsOld -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_a_79_anos">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#45To59YearsOld">
+        <rdfs:label xml:lang="pt">45 a 59 anos</rdfs:label>
+        <rdfs:label xml:lang="en">45 to 59 years old</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/onto/politics#_anos -->
+    <!-- http://purl.org/onto/politics#60To69YearsOld -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#_anos">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/ageRange"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#60To69YearsOld">
+        <rdfs:label xml:lang="pt">60 a 69 anos</rdfs:label>
+        <rdfs:label xml:lang="en">60 to 69 years old</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/onto/politics#70To79YearsOld -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/onto/politics#70To79YearsOld">
+        <rdfs:label xml:lang="pt">70 a 79 anos</rdfs:label>
+        <rdfs:label xml:lang="en">70 to 79 years old</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q6581072 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q6581072">
+        <rdfs:label xml:lang="en">Female</rdfs:label>
+        <rdfs:label xml:lang="pt">Feminino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q6581097 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q6581097">
+        <rdfs:label xml:lang="en">Male</rdfs:label>
+        <rdfs:label xml:lang="pt">Masculino</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
