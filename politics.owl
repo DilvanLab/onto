@@ -470,13 +470,13 @@
     
 
 
-    <!-- http://purl.org/onto/politics#internalCandidateNumber -->
+    <!-- http://purl.org/onto/politics#internalNumber -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#internalCandidateNumber">
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto/politics#internalNumber">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:comment xml:lang="pt">Número sequencial do candidato gerado internamente pelos sistemas eleitorais. Não é o número de campanha do candidato.</rdfs:comment>
-        <rdfs:label xml:lang="en">internal candidate number</rdfs:label>
-        <rdfs:label xml:lang="pt">número interno do candidato</rdfs:label>
+        <rdfs:comment xml:lang="pt">Número sequencial gerado internamente pelos sistemas eleitorais.</rdfs:comment>
+        <rdfs:label xml:lang="en">internal number</rdfs:label>
+        <rdfs:label xml:lang="pt">número interno</rdfs:label>
     </owl:DatatypeProperty>
     
 
