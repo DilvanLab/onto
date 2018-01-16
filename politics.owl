@@ -153,13 +153,11 @@
     
 
 
-    <!-- http://purl.org/onto/politics#candidacySituation -->
+    <!-- http://purl.org/onto/politics#situation -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/onto/politics#candidacySituation">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/onto/politics#has"/>
-        <rdfs:range rdf:resource="http://purl.org/onto/politics#CandidacySituation"/>
-        <rdfs:label xml:lang="en">candidacy situation</rdfs:label>
-        <rdfs:label xml:lang="pt">situação da candidatura</rdfs:label>
+    <owl:DataProperty rdf:about="http://purl.org/onto/politics#situation">
+        <rdfs:label xml:lang="en">situation</rdfs:label>
+        <rdfs:label xml:lang="pt">situação</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -639,18 +637,7 @@
         <rdfs:comment xml:lang="en">Candidacy</rdfs:comment>
         <rdfs:comment xml:lang="pt">Candidatura</rdfs:comment>
     </owl:Class>
-    
-
-
-    <!-- http://purl.org/onto/politics#CandidacySituation -->
-
-    <owl:Class rdf:about="http://purl.org/onto/politics#CandidacySituation">
-        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q2285707"/>
-        <rdfs:label xml:lang="en">Candidacy Situation</rdfs:label>
-        <rdfs:label xml:lang="pt">Situação da Candidatura</rdfs:label>
-    </owl:Class>
-    
-
+  
 
     <!-- http://purl.org/onto/politics#CivilStatus -->
 
